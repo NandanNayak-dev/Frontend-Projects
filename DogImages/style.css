@@ -1,0 +1,104 @@
+body {
+  background: #f5f7fa;
+  font-family: "Segoe UI", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  animation: fadeInBody 1s;
+}
+
+h1 {
+  color: #22223b;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  letter-spacing: 1.5px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  padding: 16px 40px;
+  border-radius: 10px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 36px;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+}
+
+button:hover,
+button:focus {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(34, 34, 59, 0.1);
+  margin-top: 16px;
+  border: 3px solid #fff;
+  opacity: 0;
+  animation: fadeInImg 1s forwards;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+img:hover {
+  box-shadow: 0 8px 32px rgba(34, 34, 59, 0.15);
+  transform: scale(1.02);
+}
+
+p {
+  color: #3a3a3a;
+  font-size: 1.08rem;
+  margin: 12px 0 0 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 8px 12px;
+  text-align: center;
+}
+
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+    margin: 24px 0 12px;
+  }
+  button {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+  img {
+    width: 90vw;
+    height: 40vw;
+    min-width: 120px;
+    min-height: 80px;
+  }
+  p {
+    font-size: 0.95rem;
+    min-width: 100px;
+  }
+}

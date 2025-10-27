@@ -1,0 +1,219 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #071422; 
+  color: #e6eef3; 
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  background-color: #0f766e; 
+
+  height: 70px;
+  width: 100%;
+  border-radius: 10px;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+.navbar .logo {
+  color: #f8fafc;
+  font-size: 30px;
+  line-height: 70px;
+  text-align: start;
+  margin-left: 80px;
+}
+.navbar .logo span {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.navbar .generatebill {
+  margin-right: 80px;
+  float: right;
+  line-height: 70px;
+  margin-top: -4px;
+}
+.navbar .generatebill button {
+  height: 44px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: #072a2a;
+  color: white; 
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  cursor: pointer;
+}
+/*----------*/
+
+.content {
+  height: 100vh;
+  width: 100%;
+  background-color: #071422; 
+  display: flex;
+  margin-top: 70px;
+}
+
+.content .sidebar {
+  height: 100%;
+  width: 24%;
+  background-color: #0b2a33; 
+  border-radius: 10px;
+  position: fixed;
+}
+
+.content .dishes {
+  height: 100%;
+  width: 76%;
+  background-color: #071422;
+  border-radius: 10px;
+  margin-left: 24%;
+}
+
+/*--------------*/
+
+.content .sidebar .info {
+  color: #e6eef3;
+  height: 250px;
+  width: 75%;
+  background-color: #0b2a33;
+  border-radius: 10px;
+  margin: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.04);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: start;
+  font-size: 20px;
+}
+.infoinside {
+  height: 150px;
+  width: 150px;
+  margin-left: 50px;
+  margin-top: 40px;
+  background-color: #0b2a33;
+}
+
+.content .sidebar .bill {
+  height: 300px;
+  width: 75%;
+  background-color: #0b2a33;
+  border-radius: 10px;
+  margin: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.04);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: start;
+  font-size: 20px;
+}
+
+.total {
+  height: 50px;
+  width: 75%;
+  margin-left: 20px;
+  margin-top: 10px;
+  background: linear-gradient(
+    90deg,
+    #0f766e,
+    #072a2a
+  ); 
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total .tot {
+  height: 35px;
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 7px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color:  #0f766e;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: -2px;
+}
+.total .afterbill {
+  height: 35px;
+  width: 70px;
+  margin-right: 40px;
+  margin-top: 7px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #0f766e;
+  border-radius: 10px;
+  padding-top: 4px;
+  padding-bottom: -2px;
+}
+
+/*----------------*/
+
+.content .dishes .popular {
+  height: 250px;
+  width: 100%;
+  background-color: #0f766e;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.content .items {
+  height: 200px;
+  width: 190px;
+  background-color: #0b2a33;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.content .items img {
+  height: 170px;
+  width: 190px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.content .items .price {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  height: 30px;
+  width: 100%;
+  background-color: #082033;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.content .dishes .others {
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  background-color: #072a2a;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.beverages {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.dishes h1 {
+  text-align: start;
+  margin-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #0f766e;
+}
+.items:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

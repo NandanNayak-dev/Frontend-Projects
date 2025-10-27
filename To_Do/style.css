@@ -1,0 +1,118 @@
+/* Simple, easy-to-read styles for the To-Do app */
+
+/* Page layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2; /* light gray background */
+}
+
+/* Center the app on the page */
+.todo-app {
+  width: 100%;
+  max-width: 480px;
+  margin: 40px auto;
+  background-color: #ffffff; /* white card */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.todo-app h1 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.todo-form button {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a6cf7; /* simple blue */
+  color: white;
+  cursor: pointer;
+}
+
+.todo-form button:active {
+  opacity: 0.95;
+}
+
+/* List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.todo-item + .todo-item {
+  margin-top: 8px;
+}
+
+/* Delete button on the left */
+.delete-btn {
+  background-color: transparent;
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background-color: #ffecec;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 15px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 13px;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* Small responsive tweak */
+@media (max-width: 420px) {
+  .todo-app {
+    margin: 20px;
+    padding: 12px;
+  }
+  .todo-form button {
+    padding: 8px 10px;
+  }
+}
