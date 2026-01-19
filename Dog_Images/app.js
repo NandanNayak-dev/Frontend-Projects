@@ -2,10 +2,10 @@ let url="https://dog.ceo/api/breeds/image/random"
 let btn=document.querySelector("button")
 
 btn.addEventListener("click",()=>{
-    getCatFact()
+    getDogImage()
 })
 
-async function getCatFact(){    
+async function getDogImage(){    
 try{
         let response=await axios.get(url)
         let img=document.querySelector("img")
@@ -18,4 +18,4 @@ try{
 
     }
 }
-getCatFact()
+getDogImage()
